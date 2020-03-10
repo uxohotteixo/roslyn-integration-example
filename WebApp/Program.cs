@@ -13,10 +13,7 @@ namespace WebApp
     {
         public static void Main(string[] args)
         {
-            var a = 0;
-            Console.WriteLine(a);
             var dateNow = DateTime.Now;
-
             CreateHostBuilder(args).Build().Run();
         }
 

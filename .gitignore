@@ -3,3 +3,4 @@ obj/
 /packages/
 /.idea/.idea.RoslynAnalyzers/.idea
 *iml
+.vs

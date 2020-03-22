@@ -4,9 +4,9 @@ using Microsoft.CodeAnalysis.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using TestHelper;
-using DisableDateTimeAnalyzer;
+using PublicProperty;
 
-namespace DisableDateTimeAnalyzer.Test
+namespace PublicProperty.Test
 {
     [TestClass]
     public class UnitTest : CodeFixVerifier
@@ -41,7 +41,7 @@ namespace DisableDateTimeAnalyzer.Test
     }";
             var expected = new DiagnosticResult
             {
-                Id = "DisableDateTimeAnalyzer",
+                Id = "PublicProperty",
                 Message = String.Format("Type name '{0}' contains lowercase letters", "TypeName"),
                 Severity = DiagnosticSeverity.Warning,
                 Locations =
@@ -71,12 +71,12 @@ namespace DisableDateTimeAnalyzer.Test
 
         protected override CodeFixProvider GetCSharpCodeFixProvider()
         {
-            return new DisableDateTimeAnalyzerCodeFixProvider();
+            return new PublicPropertyCodeFixProvider();
         }
 
         protected override DiagnosticAnalyzer GetCSharpDiagnosticAnalyzer()
         {
-            return new DisableDateTimeAnalyzerAnalyzer();
+            return new PublicPropertyAnalyzer();
         }
     }
 }

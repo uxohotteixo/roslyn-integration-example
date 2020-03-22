@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DisableDateTimeAnalyzer\DisableDateTimeAnalyzer\DisableDateTimeAnalyzer.csproj">
+    <ProjectReference Include="..\PublicProperty\PublicProperty\PublicProperty.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <OutputItemType>Analyzer</OutputItemType>
     </ProjectReference>

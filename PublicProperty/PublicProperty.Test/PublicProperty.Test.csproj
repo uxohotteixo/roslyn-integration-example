@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DisableDateTimeAnalyzer\DisableDateTimeAnalyzer.csproj" />
+    <ProjectReference Include="..\PublicProperty\PublicProperty.csproj" />
   </ItemGroup>
 
 </Project>

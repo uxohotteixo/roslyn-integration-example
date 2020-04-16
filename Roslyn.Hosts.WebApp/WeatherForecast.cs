@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApp
+namespace Roslyn.Hosts.WebApp
 {
     public class WeatherForecast
     {

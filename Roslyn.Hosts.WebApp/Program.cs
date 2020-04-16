@@ -2,14 +2,20 @@ using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace WebApp
+namespace Roslyn.Hosts.WebApp
 {
     public class Program
     {
-        public int Property { get; set; }
+        public bool Property { get; private set; } = false;
 
         public static void Main(string[] args)
         {
+            var date = DateTime.Now;
+
+            bool isA = true;
+            bool isD,isC = false;
+
+
             CreateHostBuilder(args).Build().Run();
         }
 
